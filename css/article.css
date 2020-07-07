@@ -1,0 +1,58 @@
+#article_preview_container{
+    display: flex;
+    align-items: center;
+}
+.article_preview_img{
+    width: 55%;
+    border: 1px solid red;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.article_preview_img img{
+    width: 95%;
+    max-width: 400px;
+
+}
+.article_preview_text{
+    width: 40%;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    /* padding-left: 1em;
+    padding-right: 0.5em;
+    padding-bottom: 3em;
+    padding-top: 2em; */
+    margin: 2em 0.5em 3em 1em;
+}
+
+#article_preview_information{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.preview_button{
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0.2em;
+}
+.preview_information{
+    border: 2px grey solid;
+    padding: 0.3em;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+@media only screen and (min-width: 600px){
+    #article_preview_container{
+        max-width: 70%;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    #article_preview_container{
+        max-width: 50%;
+    }
+}

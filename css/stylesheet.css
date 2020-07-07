@@ -1,0 +1,506 @@
+#testback{background-image: url('/001CONGRATS/ressources/promotion/clearSea.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+.congrats_soft_button{
+    text-decoration: none;
+    color: black;
+    border: 2px solid gray;
+    padding: 0.6em;
+}
+.congrats_soft_button:hover{
+    background-color: cadetblue;
+    color: white;
+    transition: 0.5s;
+}
+
+/********************* HEADER **************************/
+
+#dropdown-content{
+    display: none;
+}
+
+header{
+    text-align: center;
+    background-color: #40e0d0;
+}
+header a h1{
+    text-decoration: none;
+    font-family: NotoSansBold;
+    font-size: 3em;
+    padding: 0.2em;
+    color: black;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+/*HEADER SHAPE*/
+#headershape{
+    clip-path: polygon(0 23%, 100% 7%, 100% 21%, 96% 26%, 99% 28%, 99% 36%, 91% 39%, 99% 42%, 100% 55%, 2% 71%, 1% 62%, 5% 58%, 2% 55%, 1% 48%, 6% 39%, 1% 36%);
+    background-color: #b77ee7;
+    width: 350px;
+    height: 7em;
+    position: absolute;
+    left: auto;
+    top: 1.5em;
+    z-index: 0;
+}
+header a:hover #headershape{
+    background-color: #fbff00;
+    transition: 1s;
+}
+
+#header_nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: darkslategrey;
+    padding: 0.7em;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+#header_nav button[value=home]{
+    position: absolute;
+    left: 10px;
+}
+#header_nav button{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+nav span{
+    display: none;
+}
+.connection_toggle{
+    display: inline-block;
+    /* position: absolute;
+    right: 10px; */
+}
+nav div button{
+    display: inline;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+#header_nav button span{
+    display: none;
+}
+
+#span_connection_status{
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* .search_container{
+    margin-left: 20px;
+    display: flex;
+    justify-content:space-between;
+} */
+#search_bar{
+    display: none;
+    /* transition: width 2s ease; */
+    justify-content: flex-end;
+    padding-right: 1em;
+    cursor: text;
+    padding: 0.5em;
+    background-color: #ffa07a;
+}
+#search_bar input{
+    width: 15em;
+
+}
+
+#header_connection_status{
+    text-align: center;
+}
+#span_connection_status{
+    font-family: NotoSansBold;
+}
+.status_success{
+    color: green;
+}
+.status_error{
+    color: red;
+}
+.status_connected{
+    color: blue;
+}
+
+@media only screen and (min-width: 600px){
+    #search_bar{
+       padding-right: 2em;
+    }
+    #search_bar input{
+        width: auto;
+        margin-right: 1em;
+        border-radius: 20px;
+        border: none;
+        padding-left: 2em;
+    }
+}
+@media only screen and (min-width: 775px){
+    #header_nav button span{
+        display: inline-block;
+    };
+}
+
+
+
+
+
+/*************** MAIN PAGE *************/
+
+/* MAIN BANNER */
+#header_banner{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+}
+#header_banner_text{
+    padding: 1.2em;
+    text-align:center;
+}
+#header_banner_text p{
+    text-align: justify;
+}
+#header_banner_text h2{
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+/* NEWS BLOCK */
+#main_news_container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightsalmon;
+    background-image: url("/001CONGRATS/assets/admaSummerCollection/graine-long-fond.png");
+    background-size: contain;
+    background-blend-mode: color;
+    padding-bottom: 2em;
+    margin-bottom: 1.5em;
+
+}
+/* #main_news_block{} */
+#main_news_text{
+    text-align: center;
+    padding: 1em;
+    margin-top: 1.5em;
+
+}
+#main_news_text h3{
+    font-size: 2em;
+    color: white;
+    background-color: black;
+    max-width: 15em;
+    padding: 0.2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+#main_news_text p{
+    color: white;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+#main_news_articles{
+    width: 85%;
+    padding: 0.3em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightpink;
+}
+/* .news_article{} */
+.news_article_text{
+    text-align: center;
+}
+
+/*NEW ARRIVALS */
+#main_container{
+    text-align: center;
+}
+#main_container h2{
+    padding: 1em;
+}
+
+.new_arrival_item{
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+    .img_block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    img{
+        width: 250px;
+        
+    }
+}
+
+
+/*************** MAIN LIST ***************/
+.new_arrival_item_img{
+    margin: 0.5em 1em;
+}
+
+/****************** MAIN BOTTOM PART ****************/
+/* #main_breakpoint_top{
+    clip-path: polygon(0 0, 0 50%, 100% 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: brown;
+    height: 300px;
+} */
+#main_bottom_container{
+    background-color: blue;
+    /* position: absolute;
+    left: 0;
+    right: 0; */
+    margin: 1em 0;
+    padding: 2em;
+    padding-top: 3em;
+}
+
+
+/************************ PRODUCT PAGE ***********************/
+#testback{
+    clip-path: polygon(0 23%, 100% 7%, 100% 21%, 96% 26%, 99% 28%, 99% 36%, 91% 39%, 99% 42%, 100% 55%, 2% 71%, 1% 62%, 5% 58%, 2% 55%, 1% 48%, 6% 39%, 1% 36%);
+    width: 98%;
+    height: 30em;
+    position: absolute;
+    left: 1%;
+    top: 40%;
+    z-index: 0;
+}
+
+#product_container{
+    width: 90%;
+    padding: 1em;
+    /* background-color: salmon; */
+    /* background-color: #eeb7aa; */
+    background-color: #e1e1e1;
+    z-index: -1;
+}
+
+#article_preview_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.article_preview_img{
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.article_preview_img img{
+    width: 95%;
+    max-width: 400px;
+    border: 0.8em solid white;
+
+}
+.article_preview_text{
+    background-color: #e1e1e1;
+    padding: 0.5em;
+
+    position: relative;
+    z-index: 1;
+    border: 0.8em solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.article_preview_text div p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#article_preview_information{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.preview_button{
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0.2em;
+}
+.preview_information{
+    border: 2px grey solid;
+    padding: 0.3em;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+@media only screen and (min-width: 850px){
+    #article_preview_container{
+        max-width: 70%;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: auto;
+    }
+    .article_preview_img{
+        width: 60%;
+    }
+    .article_preview_text{
+        width: 40%;
+        margin: 1em;
+        margin-top: 2em;
+    }
+    #article_preview_information{
+        max-width: 60%;
+        margin-top: 5em;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    #article_preview_container{
+        max-width: 60%;
+    }
+}
+
+/************************** SHOPPING CART **********************/
+#cart_page p{
+    margin: 0;
+}
+#cart_page_top{
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+    padding: 0.8em;
+}
+#cart_page_top h3{
+    font-family: NotoSansBold;
+}
+#cart_sticky{
+    position: sticky;
+    z-index: 2;
+    top: 3.3em;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.8em;
+    align-items: center;
+    background-color: #40e0d0;
+}
+
+.checkout{
+    padding: 0.5em;
+    background-color: #b77ee7;
+    font-family: NotoSansBold;
+}
+
+#cart_card{
+    display: flex;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    background-color: #ffa07a;
+    border-radius: 20px;
+    padding: 0.5em;
+    /* border: 4px solid #2f4f4f; */
+}
+.cart_item{
+    width: 40%;
+    margin: auto;
+}
+.cart_item img{
+ max-width: 150px;
+}
+.cart_info{
+    width: 50%;
+    padding: 0.8em 0;
+    /* border: 2px solid #2f4f4f; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.stop{
+    display: block;
+    width: 1em;
+    float: right;
+    padding-right: 1em;
+}
+#cart_total{
+    padding: 0.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#del_btn{
+    cursor: pointer;
+    /* display: inline-block; */
+    align-self: flex-start;
+    width: 1.5em;
+}
+
+@media only screen and (min-width: 700px){
+    #cart_card{
+        padding: 0.5em;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cart_item{
+        width: 20%;
+    }
+    .cart_info{
+        width: 60%;
+        margin-right: 2em;
+    }
+}
+
+/************************* SEARCH PAGE *************************/
+.result h3, .result h2{
+    text-align: center;
+    margin: 2em;
+}
+
+
+/************************* FOOTER *****************/
+footer{
+    background-color: #2f4f4f;
+    padding: 2em 0.5em;
+    color: white;
+}
+
+#footer_map{
+    text-align: center;
+    background-image: url('/001CONGRATS/ressources/placeholder/afpa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-color: #40e0d0;
+    background-blend-mode: overlay;
+
+    padding: 1em 0;
+
+    color: #1d3030;
+
+    border:  0.5em solid white;
+}
+#footer_nav{
+    text-align: center;
+}
+@media only screen and (min-width: 600px){
+    #footer_nav nav{
+        display: flex;
+        justify-content: space-around;
+    }
+}

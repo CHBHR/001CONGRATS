@@ -1,0 +1,80 @@
+@font-face{
+    font-family:NotoSansRegular;
+    src: url(/001CONGRATS/ressources/fonts/NotoSans/NotoSansJP-Regular.otf);
+}
+
+@font-face{
+    font-family: NotoSansThin;
+    src: url(/001CONGRATS/ressources/fonts/NotoSans/NotoSansJP-Thin.otf);
+}
+
+@font-face{
+    font-family: NotoSansMedium;
+    src: url(/001CONGRATS/ressources/fonts/NotoSans/NotoSansJP-Medium.otf);
+}
+
+@font-face{
+    font-family: NotoSansBold;
+    src: url(/001CONGRATS/ressources/fonts/NotoSans/NotoSansJP-Bold.otf);
+}
+
+@font-face{
+    font-family: DancingMedium;
+    src: url(/001CONGRATS/ressources/fonts/DancingScript/static/DancingScript-Medium.ttf);
+}
+
+@font-face{
+    font-family: DancingSemi;
+    src: url(/001CONGRATS/ressources/fonts/DancingScript/static/DancingScript-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: DancingBold;
+    src: url(/001CONGRATS/ressources/fonts/DancingScript/static/DancingScript-Bold.ttf);
+}
+
+body{
+    font-family: NotoSansRegular;
+}
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+section{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+    color: teal;
+    display: inline-block;
+    margin: 0em;
+}
+
+@media only screen and (min-width: 600px){
+    img{
+        width: 275px;
+    }
+}
+
+.none{
+    display: none;
+}
+
+.soft_btn{
+    border: 2px grey solid;
+    padding: 0.3em;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: black;
+}
+.soft_btn:hover{
+    background-color: #fdffab;
+}
